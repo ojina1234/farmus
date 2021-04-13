@@ -26,18 +26,15 @@ public class farmusController {
 		return "welcome";
 	}
 	
-	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public String loginMemeber(Model model, memberVO vo,  HttpServletRequest req) throws Exception{
-		HttpSession session = req.getSession();
-        memberVO member = farmusservice.login(vo);
-        
-        if(member != null) {
-            session.setAttribute("member", member);
-        } 
-      
-        return "main";
-
-
+	@RequestMapping(value="/memberInsert", method=RequestMethod.GET)
+	public void getmemberInsert() throws Exception{
+		
+	}
+	
+	@RequestMapping(value="/memberInsert", method=RequestMethod.POST)
+	public String postmemberInsert(memberVO memberVO) throws Exception{
+		farmusservice.memberInsert(memberVO);
+		return null;
 	}
 
 }

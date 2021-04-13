@@ -1,10 +1,9 @@
 package com.farmus.service.impl;
 
-import java.util.List;
+import javax.inject.Inject;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.farmus.service.farmusService;
 import com.farmus.service.dao.farmusDAO;
@@ -13,14 +12,12 @@ import com.farmus.vo.memberVO;
 @Service("farmusService")
 public class farmusServiceimpl implements farmusService {
 
+	@Inject farmusDAO dao; 
+	
 	@Override
-	public memberVO login(memberVO vo) throws Exception {
-		
-		
-		return vo;
-		
+	public void memberInsert(memberVO memberVO) throws Exception {
+		dao.memberInsert(memberVO);
 	}
-
-		
+	
 
 }
