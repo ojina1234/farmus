@@ -3,25 +3,10 @@
 
 <mapper namespace="com.farmus.service.dao.farmusDAO">
 
-<select id="login" resultType="memberVO">
-		SELECT m_name, m_point, a_num
-		FROM member
+<select id="loginMember" resultType="memberVO">
+		SELECT m_name, m_point, a_num fROM member
 		WHERE m_mail = #{m_mail}
-		AND m_pass = #{m_pass}   
+		and m_pass = #{m_pass} 
 	</select>
-	
-<insert id="memberInsert" parameterType="memberVO">
-    insert into member values(
-    member_seq.nextval,
-    #{m_div},
-    #{m_mail},
-    #{m_name},
-    #{m_age},
-    #{m_sex},
-    #{m_address},
-    #{m_point},
-    #{a_num}
-    )
-</insert>
     
 </mapper>

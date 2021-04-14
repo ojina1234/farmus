@@ -28,17 +28,6 @@
 	rel="stylesheet">
 <link href="./resources/assets/vendor/aos/aos.css" rel="stylesheet">
 <link href="./resources/assets/css/style.css" rel="stylesheet">
-<script type="text/javascript">
-
-function login() {
-	location.href = "<c:url value='/login.do'/>";
-}
-function sign() {
-	
-}
-
-</script>
-
 </head>
 <body>
 	<section>
@@ -85,17 +74,17 @@ function sign() {
 						<h2 align = "center">이미 회원이신가요?</h2>
 						<div class="col-lg-8 mt-5 mt-lg-0">
 
-					<form action="submit" action = "login()" method="post" data-aos="fade-left">
+					<form action = "login.do" method="post" data-aos="fade-left">
 						<div class="form-row">
 						
 							<div class="col-md-6 form-group">
-								<input type="text" name="email" class="form-control" id="email"
+								<input type="text" name="m_mail" class="form-control" 
 									placeholder="이메일을 입력하세요"/>
 							</div>
 						</div>
 						<div class="form-row">
 						<div class="col-md-6 form-group">
-								<input type="text" name="pass" class="form-control" id="pass"
+								<input type="text" name="m_pass" class="form-control" 
 									placeholder="비밀번호를 입력하세요"/>
 							</div>
 						</div>

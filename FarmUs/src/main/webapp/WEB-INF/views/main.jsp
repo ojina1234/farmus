@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ page session="false" %>
-    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="UTF-8"%>
+<%@ page session="false"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,20 +10,25 @@
 <title>파머스(Farm Us), 월간씨앗 프로젝트</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
-<link href="./resources/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="./resources/assets/img/apple-touch-icon.png"
+	rel="apple-touch-icon">
 <link
 	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
 	rel="stylesheet">
 <link href="./resources/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
-<link href="./resources/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+<link href="./resources/assets/vendor/icofont/icofont.min.css"
+	rel="stylesheet">
 <link href="./resources/assets/vendor/boxicons/css/boxicons.min.css"
 	rel="stylesheet">
-<link href="./resources/assets/vendor/venobox/venobox.css" rel="stylesheet">
-<link href="./resources/assets/vendor/owl.carousel/./resources/assets/owl.carousel.min.css"
+<link href="./resources/assets/vendor/venobox/venobox.css"
+	rel="stylesheet">
+<link
+	href="./resources/assets/vendor/owl.carousel/./resources/assets/owl.carousel.min.css"
 	rel="stylesheet">
 <link href="./resources/assets/vendor/aos/aos.css" rel="stylesheet">
 <link href="./resources/assets/css/style.css" rel="stylesheet">
+
 </head>
 <body>
 	<section>
@@ -36,11 +41,10 @@
 		<div class="container">
 
 			<div class="logo d-block d-lg-none">
-				<a href="main.jsp"><img src="./resources/assets/img/start.png" alt=""
-					class="img-fluid"></a>
+				<a href="main.jsp"><img src="./resources/assets/img/start.png"
+					alt="" class="img-fluid"></a>
 			</div>
-<!--======================================= 이 위의 코드는 안봐도되요========================================================= -->
-
+			<!--======================================= 이 위의 코드는 안봐도되요========================================================= -->
 
 
 
@@ -63,7 +67,8 @@
 
 
 					<li class="nav-logo"><a href="main.jsp"><img
-							src="./resources/assets/img/start.png" width="80px" alt="" class="img-fluid"></a></li>
+							src="./resources/assets/img/start.png" width="80px" alt=""
+							class="img-fluid"></a></li>
 					<li><a href="#team">팀원 소개</a></li>
 					<li><a href="#pricing">구독안내</a></li>
 					<li><a href="#contact">커뮤니티</a></li>
@@ -88,90 +93,17 @@
 			<div class="row">
 				<div class="col-lg-6" data-aos="fade-right">
 					<div class="image">
-						<img src="./resources/assets/img/about.jpg" class="img-fluid" alt="">
+						<img src="./resources/assets/img/about.jpg" class="img-fluid"
+							alt="">
 					</div>
 				</div>
 				<div class="col-lg-6" data-aos="fade-left">
 					<div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-						
-						<p>이정도 했으면 되야하는거 아니냐 솔직히..</p>
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-					
+
+						${member.m_name}
+						${member.m_point}
+						${member.a_num}
+
 					</div>
 				</div>
 			</div>
@@ -231,22 +163,26 @@
 					<div class="tab-content">
 						<div class="tab-pane active show" id="tab-1">
 							<figure>
-								<img src="./resources/assets/img/featured-1.png" alt="" class="img-fluid">
+								<img src="./resources/assets/img/featured-1.png" alt=""
+									class="img-fluid">
 							</figure>
 						</div>
 						<div class="tab-pane" id="tab-2">
 							<figure>
-								<img src="./resources/assets/img/featured-2.png" alt="" class="img-fluid">
+								<img src="./resources/assets/img/featured-2.png" alt=""
+									class="img-fluid">
 							</figure>
 						</div>
 						<div class="tab-pane" id="tab-3">
 							<figure>
-								<img src="./resources/assets/img/featured-3.png" alt="" class="img-fluid">
+								<img src="./resources/assets/img/featured-3.png" alt=""
+									class="img-fluid">
 							</figure>
 						</div>
 						<div class="tab-pane" id="tab-4">
 							<figure>
-								<img src="./resources/assets/img/featured-4.png" alt="" class="img-fluid">
+								<img src="./resources/assets/img/featured-4.png" alt=""
+									class="img-fluid">
 							</figure>
 						</div>
 					</div>
@@ -387,8 +323,8 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-app">
 					<div class="portfolio-wrap">
-						<img src="./resources/assets/img/portfolio/portfolio-1.jpg" class="img-fluid"
-							alt="">
+						<img src="./resources/assets/img/portfolio/portfolio-1.jpg"
+							class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>App 1</h4>
 							<p>App</p>
@@ -404,8 +340,8 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-web">
 					<div class="portfolio-wrap">
-						<img src="./resources/assets/img/portfolio/portfolio-2.jpg" class="img-fluid"
-							alt="">
+						<img src="./resources/assets/img/portfolio/portfolio-2.jpg"
+							class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Web 3</h4>
 							<p>Web</p>
@@ -421,8 +357,8 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-app">
 					<div class="portfolio-wrap">
-						<img src="./resources/assets/img/portfolio/portfolio-3.jpg" class="img-fluid"
-							alt="">
+						<img src="./resources/assets/img/portfolio/portfolio-3.jpg"
+							class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>App 2</h4>
 							<p>App</p>
@@ -438,8 +374,8 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
 					<div class="portfolio-wrap">
-						<img src="./resources/assets/img/portfolio/portfolio-4.jpg" class="img-fluid"
-							alt="">
+						<img src="./resources/assets/img/portfolio/portfolio-4.jpg"
+							class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Card 2</h4>
 							<p>Card</p>
@@ -455,8 +391,8 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-web">
 					<div class="portfolio-wrap">
-						<img src="./resources/assets/img/portfolio/portfolio-5.jpg" class="img-fluid"
-							alt="">
+						<img src="./resources/assets/img/portfolio/portfolio-5.jpg"
+							class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Web 2</h4>
 							<p>Web</p>
@@ -471,8 +407,8 @@
 				</div>
 				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
 					<div class="portfolio-wrap">
-						<img src="./resources/assets/img/portfolio/portfolio-7.jpg" class="img-fluid"
-							alt="">
+						<img src="./resources/assets/img/portfolio/portfolio-7.jpg"
+							class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Card 1</h4>
 							<p>Card</p>
@@ -490,49 +426,52 @@
 
 		</div>
 	</section>
-	<!-- 상품소개 섹션 끝 -->
-	<!-- ======= 팀원 하단 개발도구용 섹션 ======= -->
+	<!-- 상품소개 섹션 끝 --> <!-- ======= 팀원 하단 개발도구용 섹션 ======= -->
 	<section id="clients" class="clients">
 		<div class="container">
 
 			<div class="row">
 
 				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in">
-					<img src="./resources/assets/img/clients/client-1.png" class="img-fluid" alt="">
+					<img src="./resources/assets/img/clients/client-1.png"
+						class="img-fluid" alt="">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
 					data-aos-delay="100">
-					<img src="./resources/assets/img/clients/client-2.png" class="img-fluid" alt="">
+					<img src="./resources/assets/img/clients/client-2.png"
+						class="img-fluid" alt="">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
 					data-aos-delay="200">
-					<img src="./resources/assets/img/clients/client-3.png" class="img-fluid" alt="">
+					<img src="./resources/assets/img/clients/client-3.png"
+						class="img-fluid" alt="">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
 					data-aos-delay="300">
-					<img src="./resources/assets/img/clients/client-4.png" class="img-fluid" alt="">
+					<img src="./resources/assets/img/clients/client-4.png"
+						class="img-fluid" alt="">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
 					data-aos-delay="400">
-					<img src="./resources/assets/img/clients/client-5.png" class="img-fluid" alt="">
+					<img src="./resources/assets/img/clients/client-5.png"
+						class="img-fluid" alt="">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
 					data-aos-delay="500">
-					<img src="./resources/assets/img/clients/client-6.png" class="img-fluid" alt="">
+					<img src="./resources/assets/img/clients/client-6.png"
+						class="img-fluid" alt="">
 				</div>
 
 			</div>
 
 		</div>
 	</section>
-	<!-- 팀원 하단 개발도구용 섹션 -->
-	
-	<!-- ======= 팀원 소개 섹션 ======= -->
+	<!-- 팀원 하단 개발도구용 섹션 --> <!-- ======= 팀원 소개 섹션 ======= -->
 	<section id="team" class="team">
 		<div class="container">
 
@@ -544,12 +483,13 @@
 
 			<div class="row">
 
-				
+
 
 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="zoom-in" data-aos-delay="100">
 						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+							<img src="./resources/assets/img/team/team-2.jpg"
+								class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
 									class="icofont-facebook"></i></a> <a href=""><i
@@ -568,7 +508,8 @@
 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="zoom-in" data-aos-delay="100">
 						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+							<img src="./resources/assets/img/team/team-2.jpg"
+								class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
 									class="icofont-facebook"></i></a> <a href=""><i
@@ -587,7 +528,8 @@
 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="zoom-in" data-aos-delay="100">
 						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+							<img src="./resources/assets/img/team/team-2.jpg"
+								class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
 									class="icofont-facebook"></i></a> <a href=""><i
@@ -606,27 +548,8 @@
 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="zoom-in" data-aos-delay="100">
 						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg" class="img-fluid" alt="">
-							<div class="social">
-								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
-									class="icofont-facebook"></i></a> <a href=""><i
-									class="icofont-instagram"></i></a> <a href=""><i
-									class="icofont-linkedin"></i></a>
-							</div>
-						</div>
-						<div class="member-info">
-							<h4>지나지나 오 지나</h4>
-							<span>상급 팀원</span>
-							<p>상철아 솔직히 템플릿 너무 예쁜거 아니냐? 대박이다 정말 취직하면 너를 잊지 못할거야 역시
-								갓팀장안상철~!</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-					<div class="member" data-aos="zoom-in" data-aos-delay="100">
-						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+							<img src="./resources/assets/img/team/team-2.jpg"
+								class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
 									class="icofont-facebook"></i></a> <a href=""><i
@@ -643,7 +566,28 @@
 					</div>
 				</div>
 
-				
+				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+					<div class="member" data-aos="zoom-in" data-aos-delay="100">
+						<div class="member-img">
+							<img src="./resources/assets/img/team/team-2.jpg"
+								class="img-fluid" alt="">
+							<div class="social">
+								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
+									class="icofont-facebook"></i></a> <a href=""><i
+									class="icofont-instagram"></i></a> <a href=""><i
+									class="icofont-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="member-info">
+							<h4>지나지나 오 지나</h4>
+							<span>상급 팀원</span>
+							<p>상철아 솔직히 템플릿 너무 예쁜거 아니냐? 대박이다 정말 취직하면 너를 잊지 못할거야 역시
+								갓팀장안상철~!</p>
+						</div>
+					</div>
+				</div>
+
+
 
 			</div>
 
@@ -723,8 +667,7 @@
 
 		</div>
 	</section>
-	<!-- 구독안내 섹션 끝 -->
-	<!-- ======= 커뮤니티 섹션 ======= -->
+	<!-- 구독안내 섹션 끝 --> <!-- ======= 커뮤니티 섹션 ======= -->
 	<section id="contact" class="contact section-bg">
 		<div class="container">
 
@@ -812,7 +755,6 @@
 	</section>
 	<!-- 커뮤니티 섹션 끝 --> </main>
 	<!-- 메인 페이지 1 ~ 6번까지 끝 -->
-	
 
 
 
@@ -835,16 +777,21 @@
 
 
 
-<!--======================================= 이 아래 코드는 안봐도되요========================================================= -->
+
+	<!--======================================= 이 아래 코드는 안봐도되요========================================================= -->
 	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 	<script src="./resources/assets/vendor/jquery/jquery.min.js"></script>
-	<script src="./resources/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="./resources/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script
+		src="./resources/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="./resources/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
 	<script src="./resources/assets/vendor/php-email-form/validate.js"></script>
 	<script src="./resources/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
 	<script src="./resources/assets/vendor/venobox/venobox.min.js"></script>
-	<script src="./resources/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-	<script src="./resources/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script
+		src="./resources/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script
+		src="./resources/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 	<script src="./resources/assets/vendor/aos/aos.js"></script>
 	<!-- Template Main JS File -->
 	<script src="./resources/assets/js/main.js"></script>
