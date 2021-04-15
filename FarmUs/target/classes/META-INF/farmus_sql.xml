@@ -8,5 +8,9 @@
 		WHERE m_mail = #{m_mail}
 		and m_pass = #{m_pass} 
 	</select>
+	
+<select id="selectBoard" resultType="boardVO" parameterType="String">
+    select b_title, m_name, b_date from board
+</select>
     
 </mapper>

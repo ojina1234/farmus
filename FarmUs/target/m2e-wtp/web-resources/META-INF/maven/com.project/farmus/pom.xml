@@ -35,11 +35,18 @@
 		    <version>1.4</version>
 		</dependency>
 		
-		<!-- 오라클 JDBC 드라이버 -->
+		<!-- 오라클 JDBC 드라이버 
 		<dependency>
 		    <groupId>com.oracle</groupId>
 		    <artifactId>ojdbc7</artifactId>
 		    <version>12.1.0.2</version>
+		</dependency>
+		-->
+		
+		<dependency>
+    	<groupId>com.oracle.database.jdbc</groupId>
+		    <artifactId>ojdbc6</artifactId>
+		    <version>11.2.0.4</version>
 		</dependency>
 
 		<!-- MyBatis 라이브러리 -->

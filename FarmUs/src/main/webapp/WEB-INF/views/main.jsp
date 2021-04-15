@@ -62,16 +62,17 @@
 					<li class="active"><a data-aos="fade-up" href="#about"
 						class="scrollto">마이 페이지</a></li>
 					</li>
-					<li><a href="#services">나의 몬씨앗</a></li>
-					<li><a href="#portfolio">상품소개</a></li>
+					<li><a href="#services">몬스타그램</a></li>
+					<li><a href="#portfolio">상품소개 및 구매</a></li>
 
 
-					<li class="nav-logo"><a href="main.jsp"><img
+					<li class="nav-logo"><a href="javascript:location.reload()"><img
 							src="./resources/assets/img/start.png" width="80px" alt=""
 							class="img-fluid"></a></li>
-					<li><a href="#team">팀원 소개</a></li>
-					<li><a href="#pricing">구독안내</a></li>
+
+					<li><a href="#pricing">구독안내 및 신청</a></li>
 					<li><a href="#contact">커뮤니티</a></li>
+					<li><a href="#why-us">씨앗 나눔광장</a></li>
 
 				</ul>
 			</nav>
@@ -100,22 +101,18 @@
 				<div class="col-lg-6" data-aos="fade-left">
 					<div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
 
-						${member.m_name}
-						${member.m_point}
-						${member.a_num}
-
-					</div>
+						${member.m_name} ${member.m_point} ${member.a_num}</div>
 				</div>
 			</div>
 
 		</div>
 	</section>
-	<!-- 드랍다운-마이 페이지 섹션 끝 --> <!-- ======= 나의 몬씨앗 섹션 ======= -->
+	<!-- 드랍다운-마이 페이지 섹션 끝 --> <!-- ======= 몬스타그램 ======= -->
 	<section id="services" class="services">
 		<div class="container">
 
 			<div class="section-title" data-aos="fade-up">
-				<h2>나의 몬씨앗</h2>
+				<h2>몬스타그램</h2>
 				<p>Magnam dolores commodi suscipit eius consequatur ex aliquid
 					fuga eum quidem</p>
 			</div>
@@ -154,156 +151,12 @@
 
 		</div>
 	</section>
-	<!-- 나의 몬씨앗 섹션 끝 --> <!-- ======= 2번 하단 메뉴 섹션 -1 시작 ======= -->
-	<section id="featured" class="featured">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-6" data-aos="fade-right">
-					<div class="tab-content">
-						<div class="tab-pane active show" id="tab-1">
-							<figure>
-								<img src="./resources/assets/img/featured-1.png" alt=""
-									class="img-fluid">
-							</figure>
-						</div>
-						<div class="tab-pane" id="tab-2">
-							<figure>
-								<img src="./resources/assets/img/featured-2.png" alt=""
-									class="img-fluid">
-							</figure>
-						</div>
-						<div class="tab-pane" id="tab-3">
-							<figure>
-								<img src="./resources/assets/img/featured-3.png" alt=""
-									class="img-fluid">
-							</figure>
-						</div>
-						<div class="tab-pane" id="tab-4">
-							<figure>
-								<img src="./resources/assets/img/featured-4.png" alt=""
-									class="img-fluid">
-							</figure>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
-					<ul class="nav nav-tabs flex-column">
-						<li class="nav-item"><a class="nav-link active show"
-							data-toggle="tab" href="#tab-1">
-								<h4>Modi sit est</h4>
-								<p>Quis excepturi porro totam sint earum quo nulla
-									perspiciatis eius.</p>
-						</a></li>
-						<li class="nav-item mt-2"><a class="nav-link"
-							data-toggle="tab" href="#tab-2">
-								<h4>Unde praesentium sed</h4>
-								<p>Voluptas vel esse repudiandae quo excepturi.</p>
-						</a></li>
-						<li class="nav-item mt-2"><a class="nav-link"
-							data-toggle="tab" href="#tab-3">
-								<h4>Pariatur explicabo vel</h4>
-								<p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
-						</a></li>
-						<li class="nav-item mt-2"><a class="nav-link"
-							data-toggle="tab" href="#tab-4">
-								<h4>Nostrum qui quasi</h4>
-								<p>Ratione hic sapiente nostrum doloremque illum nulla
-									praesentium id</p>
-						</a></li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-	</section>
-	<!-- 2번 하단 메뉴 섹션 -1 끝 --> <!-- ======= 2번 하단 메뉴 섹션 -2 시작  ======= -->
-	<section id="why-us" class="why-us">
-		<div class="container-fluid">
-
-			<div class="row">
-
-				<div
-					class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-stretch">
-
-					<div class="content" data-aos="fade-up">
-						<h3>
-							Eum ipsam laborum deleniti <strong>velit pariatur
-								architecto aut nihil</strong>
-						</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt ut labore et dolore magna
-							aliqua. Duis aute irure dolor in reprehenderit</p>
-					</div>
-
-					<div class="accordion-list">
-						<ul>
-							<li data-aos="fade-up" data-aos-delay="100"><a
-								data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span>
-									Non consectetur a erat nam at lectus urna duis? <i
-									class="bx bx-chevron-down icon-show"></i><i
-									class="bx bx-chevron-up icon-close"></i></a>
-								<div id="accordion-list-1" class="collapse show"
-									data-parent=".accordion-list">
-									<p>Feugiat pretium nibh ipsum consequat. Tempus iaculis
-										urna id volutpat lacus laoreet non curabitur gravida.
-										Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-										purus non.</p>
-								</div></li>
-
-							<li data-aos="fade-up" data-aos-delay="200"><a
-								data-toggle="collapse" href="#accordion-list-2"
-								class="collapsed"><span>02</span> Feugiat scelerisque varius
-									morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i
-									class="bx bx-chevron-up icon-close"></i></a>
-								<div id="accordion-list-2" class="collapse"
-									data-parent=".accordion-list">
-									<p>Dolor sit amet consectetur adipiscing elit pellentesque
-										habitant morbi. Id interdum velit laoreet id donec ultrices.
-										Fringilla phasellus faucibus scelerisque eleifend donec
-										pretium. Est pellentesque elit ullamcorper dignissim. Mauris
-										ultrices eros in cursus turpis massa tincidunt dui.</p>
-								</div></li>
-
-							<li data-aos="fade-up" data-aos-delay="300"><a
-								data-toggle="collapse" href="#accordion-list-3"
-								class="collapsed"><span>03</span> Dolor sit amet consectetur
-									adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i
-									class="bx bx-chevron-up icon-close"></i></a>
-								<div id="accordion-list-3" class="collapse"
-									data-parent=".accordion-list">
-									<p>Eleifend mi in nulla posuere sollicitudin aliquam
-										ultrices sagittis orci. Faucibus pulvinar elementum integer
-										enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-										tellus pellentesque eu tincidunt. Lectus urna duis convallis
-										convallis tellus. Urna molestie at elementum eu facilisis sed
-										odio morbi quis</p>
-								</div></li>
-
-						</ul>
-					</div>
-
-				</div>
-
-				<div
-					class="col-lg-5 order-1 order-lg-2 align-items-stretch video-box"
-					style='background-image: url("./resources/assets/img/why-us.jpg");'
-					data-aos="zoom-in">
-					<a href="https://www.youtube.com/watch?v=LIqQNG_q2us"
-						class="venobox play-btn mb-4" data-vbtype="video"
-						data-autoplay="true"></a>
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-	<!-- 2번 하단 메뉴 섹션 -2 끝 --> <!-- ======= 상품소개 섹션 시작 ======= -->
+	<!-- 나의몬스타그램 섹션 끝 --> <!-- ======= 상품소개 및 구매 섹션 시작 ======= -->
 	<section id="portfolio" class="portfolio">
 		<div class="container">
 
 			<div class="section-title" data-aos="fade-up">
-				<h2>상품소개</h2>
+				<h2>상품소개 및 구매</h2>
 				<p>이미지를 클릭하면 바로 주문할 수 있어요!</p>
 			</div>
 
@@ -426,179 +279,12 @@
 
 		</div>
 	</section>
-	<!-- 상품소개 섹션 끝 --> <!-- ======= 팀원 하단 개발도구용 섹션 ======= -->
-	<section id="clients" class="clients">
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in">
-					<img src="./resources/assets/img/clients/client-1.png"
-						class="img-fluid" alt="">
-				</div>
-
-				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
-					data-aos-delay="100">
-					<img src="./resources/assets/img/clients/client-2.png"
-						class="img-fluid" alt="">
-				</div>
-
-				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
-					data-aos-delay="200">
-					<img src="./resources/assets/img/clients/client-3.png"
-						class="img-fluid" alt="">
-				</div>
-
-				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
-					data-aos-delay="300">
-					<img src="./resources/assets/img/clients/client-4.png"
-						class="img-fluid" alt="">
-				</div>
-
-				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
-					data-aos-delay="400">
-					<img src="./resources/assets/img/clients/client-5.png"
-						class="img-fluid" alt="">
-				</div>
-
-				<div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in"
-					data-aos-delay="500">
-					<img src="./resources/assets/img/clients/client-6.png"
-						class="img-fluid" alt="">
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-	<!-- 팀원 하단 개발도구용 섹션 --> <!-- ======= 팀원 소개 섹션 ======= -->
-	<section id="team" class="team">
-		<div class="container">
-
-			<div class="section-title" data-aos="fade-up">
-				<h2>팀원소개</h2>
-				<p>Magnam dolores commodi suscipit eius consequatur ex aliquid
-					fuga eum quidem</p>
-			</div>
-
-			<div class="row">
-
-
-
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-					<div class="member" data-aos="zoom-in" data-aos-delay="100">
-						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg"
-								class="img-fluid" alt="">
-							<div class="social">
-								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
-									class="icofont-facebook"></i></a> <a href=""><i
-									class="icofont-instagram"></i></a> <a href=""><i
-									class="icofont-linkedin"></i></a>
-							</div>
-						</div>
-						<div class="member-info">
-							<h4>지나지나 오 지나</h4>
-							<span>상급 팀원</span>
-							<p>상철아 솔직히 템플릿 너무 예쁜거 아니냐? 대박이다 정말 취직하면 너를 잊지 못할거야 역시
-								갓팀장안상철~!</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-					<div class="member" data-aos="zoom-in" data-aos-delay="100">
-						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg"
-								class="img-fluid" alt="">
-							<div class="social">
-								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
-									class="icofont-facebook"></i></a> <a href=""><i
-									class="icofont-instagram"></i></a> <a href=""><i
-									class="icofont-linkedin"></i></a>
-							</div>
-						</div>
-						<div class="member-info">
-							<h4>지나지나 오 지나</h4>
-							<span>상급 팀원</span>
-							<p>상철아 솔직히 템플릿 너무 예쁜거 아니냐? 대박이다 정말 취직하면 너를 잊지 못할거야 역시
-								갓팀장안상철~!</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-					<div class="member" data-aos="zoom-in" data-aos-delay="100">
-						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg"
-								class="img-fluid" alt="">
-							<div class="social">
-								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
-									class="icofont-facebook"></i></a> <a href=""><i
-									class="icofont-instagram"></i></a> <a href=""><i
-									class="icofont-linkedin"></i></a>
-							</div>
-						</div>
-						<div class="member-info">
-							<h4>지나지나 오 지나</h4>
-							<span>상급 팀원</span>
-							<p>상철아 솔직히 템플릿 너무 예쁜거 아니냐? 대박이다 정말 취직하면 너를 잊지 못할거야 역시
-								갓팀장안상철~!</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-					<div class="member" data-aos="zoom-in" data-aos-delay="100">
-						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg"
-								class="img-fluid" alt="">
-							<div class="social">
-								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
-									class="icofont-facebook"></i></a> <a href=""><i
-									class="icofont-instagram"></i></a> <a href=""><i
-									class="icofont-linkedin"></i></a>
-							</div>
-						</div>
-						<div class="member-info">
-							<h4>지나지나 오 지나</h4>
-							<span>상급 팀원</span>
-							<p>상철아 솔직히 템플릿 너무 예쁜거 아니냐? 대박이다 정말 취직하면 너를 잊지 못할거야 역시
-								갓팀장안상철~!</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-					<div class="member" data-aos="zoom-in" data-aos-delay="100">
-						<div class="member-img">
-							<img src="./resources/assets/img/team/team-2.jpg"
-								class="img-fluid" alt="">
-							<div class="social">
-								<a href=""><i class="icofont-twitter"></i></a> <a href=""><i
-									class="icofont-facebook"></i></a> <a href=""><i
-									class="icofont-instagram"></i></a> <a href=""><i
-									class="icofont-linkedin"></i></a>
-							</div>
-						</div>
-						<div class="member-info">
-							<h4>지나지나 오 지나</h4>
-							<span>상급 팀원</span>
-							<p>상철아 솔직히 템플릿 너무 예쁜거 아니냐? 대박이다 정말 취직하면 너를 잊지 못할거야 역시
-								갓팀장안상철~!</p>
-						</div>
-					</div>
-				</div>
-
-
-
-			</div>
-
-		</div>
-	</section>
-	<!-- 팀원 소개 섹션 끝 --> <!-- ======= 구독안내 섹션 시작 ======= -->
+	<!-- 상품소개 및 구매 섹션 끝 --> <!-- ======= 구독안내 및 신청 섹션 시작 ======= -->
 	<section id="pricing" class="pricing section-bg">
 		<div class="container">
 
 			<div class="section-title" data-aos="fade-up">
-				<h2>구독안내</h2>
+				<h2>구독안내 및 신청</h2>
 				<p>Magnam dolores commodi suscipit eius consequatur ex aliquid
 					fuga eum quidem</p>
 			</div>
@@ -667,7 +353,7 @@
 
 		</div>
 	</section>
-	<!-- 구독안내 섹션 끝 --> <!-- ======= 커뮤니티 섹션 ======= -->
+	<!-- 구독안내 및 신청 섹션 끝 --> <!-- ======= 커뮤니티 섹션 ======= -->
 	<section id="contact" class="contact section-bg">
 		<div class="container">
 
@@ -748,35 +434,189 @@
 					</form>
 
 				</div>
+				<div>
+					<h1></h1>
+				</div>
+				<div class="col-lg-12">
+					<div class="info d-flex flex-column justify-content-center"
+						data-aos="fade-right">
+
+						<ul class="nav nav-tabs nav-justified">
+							<li class="nav-item"><a class="nav-link active"
+								href="#inform">공지사항</a></li>
+							<li class="nav-item"><a class="nav-link" href="#free">자유게시판</a></li>
+							<li class="nav-item"><a class="nav-link" href="#qna">Q&A</a></li>
+
+						</ul>
+
+						<div class="tab-content">
+							<div class="tab-pane container active" id="inform">
+								<br>
+								<h2 style="text-align: center;">공지사항</h2>
+								<br>
+							 <table class="table">
+									<thead class="thead-light">
+										<tr>
+											<th>제목</th>
+											<th>이름</th>
+											<th>날짜</th>
+										</tr>
+									</thead>
+									<tbody>
+										<c:forEach var="boardVO" items="${boardlist}">
+											<tr>
+												<td>${boardVO.b_title}</td>
+												<td>${boardVO.m_name}</td>
+												<td>${boardVO.b_date}</td>
+											</tr>
+										</c:forEach>
+									</tbody>
+								</table> 
+							</div>
+							<div class="tab-pane container fade" id="free">
+								<br>
+								<h2 style="text-align: center;">자유게시판</h2>
+								<br>
+								<table class="table">
+									<thead class="thead-light">
+										<tr>
+											<th>Firstname</th>
+											<th>Lastname</th>
+											<th>Email</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>John</td>
+											<td>Doe</td>
+											<td>john@example.com</td>
+										</tr>
+										<tr>
+											<td>Mary</td>
+											<td>Moe</td>
+											<td>mary@example.com</td>
+										</tr>
+										<tr>
+											<td>July</td>
+											<td>Dooley</td>
+											<td>july@example.com</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tab-pane container fade" id="qna">
+								<br>
+								<h2 style="text-align: center;">Q&A</h2>
+								<br>
+								<table class="table">
+									<thead class="thead-light">
+										<tr>
+											<th>Firstname</th>
+											<th>Lastname</th>
+											<th>Email</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>John</td>
+											<td>Doe</td>
+											<td>john@example.com</td>
+										</tr>
+										<tr>
+											<td>Mary</td>
+											<td>Moe</td>
+											<td>mary@example.com</td>
+										</tr>
+										<tr>
+											<td>July</td>
+											<td>Dooley</td>
+											<td>july@example.com</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
 
 			</div>
 
 		</div>
 	</section>
-	<!-- 커뮤니티 섹션 끝 --> </main>
+	<!-- 커뮤니티 섹션 끝 --> <!-- ======= 씨앗 나눔광장 섹션 시작  ======= -->
+	<section id="why-us" class="why-us">
+		<div class="container-fluid">
+
+			<div class="row">
+
+				<div
+					class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-stretch">
+
+					<div class="content" data-aos="fade-up">
+						<h3>
+							<strong>씨앗 나눔광장</strong>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Duis aute irure dolor in reprehenderit</p>
+					</div>
+
+					<div class="accordion-list">
+						<ul>
+							<li data-aos="fade-up" data-aos-delay="100"><a
+								data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span>
+									Non consectetur a erat nam at lectus urna duis? <i
+									class="bx bx-chevron-down icon-show"></i><i
+									class="bx bx-chevron-up icon-close"></i></a>
+								<div id="accordion-list-1" class="collapse show"
+									data-parent=".accordion-list">
+									<p>Feugiat pretium nibh ipsum consequat. Tempus iaculis
+										urna id volutpat lacus laoreet non curabitur gravida.
+										Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+										purus non.</p>
+								</div></li>
+
+							<li data-aos="fade-up" data-aos-delay="200"><a
+								data-toggle="collapse" href="#accordion-list-2"
+								class="collapsed"><span>02</span> Feugiat scelerisque varius
+									morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i
+									class="bx bx-chevron-up icon-close"></i></a>
+								<div id="accordion-list-2" class="collapse"
+									data-parent=".accordion-list">
+									<p>Dolor sit amet consectetur adipiscing elit pellentesque
+										habitant morbi. Id interdum velit laoreet id donec ultrices.
+										Fringilla phasellus faucibus scelerisque eleifend donec
+										pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+										ultrices eros in cursus turpis massa tincidunt dui.</p>
+								</div></li>
+
+							<li data-aos="fade-up" data-aos-delay="300"><a
+								data-toggle="collapse" href="#accordion-list-3"
+								class="collapsed"><span>03</span> Dolor sit amet consectetur
+									adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i
+									class="bx bx-chevron-up icon-close"></i></a>
+								<div id="accordion-list-3" class="collapse"
+									data-parent=".accordion-list">
+									<p>Eleifend mi in nulla posuere sollicitudin aliquam
+										ultrices sagittis orci. Faucibus pulvinar elementum integer
+										enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+										tellus pellentesque eu tincidunt. Lectus urna duis convallis
+										convallis tellus. Urna molestie at elementum eu facilisis sed
+										odio morbi quis</p>
+								</div></li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- 씨앗 나눔 광장 섹션 끝 --> </main>
 	<!-- 메인 페이지 1 ~ 6번까지 끝 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<!--======================================= 이 아래 코드는 안봐도되요========================================================= -->
 	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

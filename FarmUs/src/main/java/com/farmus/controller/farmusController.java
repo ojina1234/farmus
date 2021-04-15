@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.farmus.service.farmusService;
+import com.farmus.vo.boardVO;
 import com.farmus.vo.memberVO;
 
 @Controller
@@ -41,5 +42,20 @@ public class farmusController {
 
 
 	}
+	
+	@RequestMapping(value="/list", method=RequestMethod.GET)
+	public String list(boardVO boardVO, Model model, HttpServletRequest req) throws Exception{
+		
+		HttpSession session = req.getSession();
+		List<?> boardlist = farmusservice.selectBoard(boardVO);
+		model.addAttribute("boardlist", boardlist);
+		
+		return "main";
+		
+	} 
+	
+	
+	
+	
 
 }

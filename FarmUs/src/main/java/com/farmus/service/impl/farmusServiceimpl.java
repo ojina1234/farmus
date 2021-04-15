@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.farmus.service.farmusService;
 import com.farmus.service.dao.farmusDAO;
+import com.farmus.vo.boardVO;
 import com.farmus.vo.memberVO;
 
 @Service("farmusService")
@@ -19,7 +20,12 @@ public class farmusServiceimpl implements farmusService {
 	@Override
 	public memberVO loginMember(memberVO vo) throws Exception {
 		return mapper.loginMember(vo);
+	}
+
+	@Override
+	public List<?> selectBoard(boardVO boardVO) throws Exception {
+		
+		return mapper.selectBoard(boardVO);
 	} 
 		
-
 }
