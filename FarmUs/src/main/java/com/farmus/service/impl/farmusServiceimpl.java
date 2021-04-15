@@ -10,6 +10,7 @@ import com.farmus.service.farmusService;
 import com.farmus.service.dao.farmusDAO;
 import com.farmus.vo.boardVO;
 import com.farmus.vo.memberVO;
+import com.farmus.vo.monseedVO;
 
 @Service("farmusService")
 public class farmusServiceimpl implements farmusService {
@@ -23,9 +24,27 @@ public class farmusServiceimpl implements farmusService {
 	}
 
 	@Override
-	public List<?> selectBoard(boardVO boardVO) throws Exception {
+	public monseedVO getMonseed(int m_num) throws Exception {
+		return mapper.getMonseed(m_num);
+	}
+
+	@Override
+	public List<boardVO> selectBoardList() throws Exception {
+		return mapper.selectBoardList();
+	}
+
+	@Override
+	public int insertBoard(boardVO vo) throws Exception {
+		return mapper.insertBoard(vo);
+	}
+
+	@Override
+	public boardVO boardOpen(String b_title) throws Exception {
 		
-		return mapper.selectBoard(boardVO);
-	} 
+		return mapper.boardOpen(b_title);
+	}
+
+	
 		
+
 }

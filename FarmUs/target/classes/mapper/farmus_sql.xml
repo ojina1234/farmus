@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.farmus.service.dao.farmusDAO">
+
+	<select id="loginMember" resultType="memberVO">
+		SELECT m_mail, m_name, m_point,
+		m_address, m_category, a_num
+		fROM member
+		WHERE m_mail = #{m_mail}
+		and
+		m_pass = #{m_pass}
+	</select>
+
+	<select id="getMonseed" resultType="monseedVO"
+		parameterType="Integer">
+		SELECT a_temper, a_hum, a_co, a_growth
+		fROM monseed
+		WHERE m_num = #{value}
+	</select>
+
+	<select id="selectBoardList" resultType="boardVO">
+		SELECT * FROM BOARD
+	</select>
+
+	<insert id="insertBoard" parameterType="boardVO">
+		INSERT INTO BOARD values(board_seq.nextval, #{b_div}, #{b_title}, #{b_content},#{m_name},#{b_date},#{m_num},#{m_mail})
+	</insert>
+	
+	<select id="boardOpen" resultType="boardVO" parameterType="String">
+		SELECT * FROM BOARD WHERE b_title = #{value}
+	</select>
+
+</mapper>

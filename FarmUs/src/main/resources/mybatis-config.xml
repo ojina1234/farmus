@@ -4,10 +4,9 @@
  "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    
     <typeAliases>
           <typeAlias alias="memberVO" type="com.farmus.vo.memberVO"/>
+          <typeAlias alias="monseedVO" type="com.farmus.vo.monseedVO"/>
           <typeAlias alias="boardVO" type="com.farmus.vo.boardVO"/>
     </typeAliases>
-    
 </configuration>

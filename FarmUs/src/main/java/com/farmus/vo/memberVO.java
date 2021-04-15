@@ -10,6 +10,7 @@ public class memberVO {
 	private int m_age;
 	private String m_sex;
 	private String m_address;
+	private String m_category;	
 	private int m_point;
 	private int a_num;
 	
@@ -18,31 +19,6 @@ public class memberVO {
 		
 	}
 
-
-	public memberVO(int m_num, String m_div, String m_mail,String m_pass, String m_name, int m_age, String m_sex, String m_address,
-			 int m_point, int a_num) {
-		super();
-		this.m_num = m_num;
-		this.m_div = m_div;
-		this.m_mail = m_mail;
-		this.m_pass = m_pass;
-		this.m_name = m_name;
-		this.m_age = m_age;
-		this.m_sex = m_sex;
-		this.m_address = m_address;
-		this.m_point = m_point;
-		this.a_num = a_num;
-	}
-
-	public String getM_pass() {
-		return m_pass;
-	}
-
-
-	public void setM_pass(String m_pass) {
-		this.m_pass = m_pass;
-	}
-	
 
 	public int getM_num() {
 		return m_num;
@@ -71,6 +47,16 @@ public class memberVO {
 
 	public void setM_mail(String m_mail) {
 		this.m_mail = m_mail;
+	}
+
+
+	public String getM_pass() {
+		return m_pass;
+	}
+
+
+	public void setM_pass(String m_pass) {
+		this.m_pass = m_pass;
 	}
 
 
@@ -113,6 +99,17 @@ public class memberVO {
 		this.m_address = m_address;
 	}
 
+
+	public String getM_category() {
+		return m_category;
+	}
+
+
+	public void setM_category(String m_category) {
+		this.m_category = m_category;
+	}
+
+
 	public int getM_point() {
 		return m_point;
 	}
@@ -135,9 +132,12 @@ public class memberVO {
 
 	@Override
 	public String toString() {
-		return "memberVO [m_num=" + m_num + ", m_div=" + m_div + ", m_mail=" + m_mail + ", m_name=" + m_name
-				+ ", m_age=" + m_age + ", m_sex=" + m_sex + ", m_address=" + m_address + ", m_point=" + m_point + ", a_num=" + a_num + "]";
+		return "memberVO [m_num=" + m_num + ", m_div=" + m_div + ", m_mail=" + m_mail + ", m_pass=" + m_pass
+				+ ", m_name=" + m_name + ", m_age=" + m_age + ", m_sex=" + m_sex + ", m_address=" + m_address
+				+ ", m_category=" + m_category + ", m_point=" + m_point + ", a_num=" + a_num + "]";
 	}
-	
+
+
+
 	
 }

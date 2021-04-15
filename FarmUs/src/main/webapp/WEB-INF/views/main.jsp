@@ -2,6 +2,12 @@
 	pageEncoding="UTF-8"%>
 <%@ page session="false"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page import="com.farmus.controller.farmusController"%>
+<%
+	farmusController date = new farmusController();
+	String b_date = date.Date();
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +16,7 @@
 <title>파머스(Farm Us), 월간씨앗 프로젝트</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="./resources/assets/img/apple-touch-icon.png"
 	rel="apple-touch-icon">
 <link
@@ -28,6 +35,18 @@
 	rel="stylesheet">
 <link href="./resources/assets/vendor/aos/aos.css" rel="stylesheet">
 <link href="./resources/assets/css/style.css" rel="stylesheet">
+<script type="text/javascript">
+
+	function contentOpen() {
+		$(#boardContent).css("visibility","visible");
+
+	}
+</script>
+<style>
+#mypagetable {
+	margin-top: 10%;
+}
+</style>
 
 </head>
 <body>
@@ -88,20 +107,73 @@
 
 			<div class="section-title" data-aos="fade-up">
 				<h2>마이 페이지</h2>
-				<p>Magnam dolores commodi suscipit eius consequatur</p>
 			</div>
-
 			<div class="row">
 				<div class="col-lg-6" data-aos="fade-right">
-					<div class="image">
-						<img src="./resources/assets/img/about.jpg" class="img-fluid"
-							alt="">
+					<div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+						<div class="container">
+
+
+							<p>성장률 : ${monseed.a_growth}%</p>
+							<div class="progress">
+
+								<div class="progress-bar bg-success progress-bar-striped"
+									style="width: ${monseed.a_growth}%"></div>
+							</div>
+							<br>
+							<p>습도 : ${monseed.a_hum}%</p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped"
+									style="width: ${monseed.a_hum}%"></div>
+							</div>
+							<br>
+							<p>온도 : ${monseed.a_temper}℃</p>
+							<div class="progress">
+								<div class="progress-bar bg-warning progress-bar-striped"
+									style="width: ${monseed.a_temper}%"></div>
+							</div>
+							<br>
+
+							<p>CO2 농도 : ${monseed.a_co}ppm</p>
+							<div class="progress">
+								<div class="progress-bar bg-danger progress-bar-striped"
+									style="width: ${co2}%"></div>
+
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-6" data-aos="fade-left">
 					<div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+						<div class="container">
+							<table class="table table-dark table-hover" id="mypagetable">
+								<thead>
+									<tr align="center">
+										<th colspan="2">${member.m_name}님환영합니다!</th>
 
-						${member.m_name} ${member.m_point} ${member.a_num}</div>
+									</tr>
+								</thead>
+								<tbody>
+									<tr align="center">
+										<td colspan="2">${member.m_address}</td>
+
+									</tr>
+									<tr align="center">
+										<td colspan="2">보유 포인트<br /> ${member.m_point}점
+										</td>
+									</tr>
+									<tr align="center">
+										<td>내 몬씨앗 번호</td>
+										<td>${member.a_num}</td>
+									</tr>
+									<tr align="center">
+										<td>나의 구독내역</td>
+										<td>${member.m_category}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -359,8 +431,7 @@
 
 			<div class="section-title">
 				<h2>커뮤니티</h2>
-				<p>Magnam dolores commodi suscipit eius consequatur ex aliquid
-					fuga eum quidem</p>
+				<p>파머스 커뮤니티입니다. :)</p>
 			</div>
 
 			<div class="row">
@@ -393,49 +464,64 @@
 				</div>
 
 				<div class="col-lg-8 mt-5 mt-lg-0">
+					<div class="info d-flex flex-column justify-content-center"
+						data-aos="fade-right">
 
-					<form action="forms/contact.php" method="post" role="form"
-						class="php-email-form" data-aos="fade-left">
-						<div class="form-row">
-							<div class="col-md-6 form-group">
-								<input type="text" name="name" class="form-control" id="name"
-									placeholder="Your Name" data-rule="minlen:4"
-									data-msg="Please enter at least 4 chars" />
+						<form action="insertBoard.do" method="post" data-aos="fade-left">
+
+							<div class="form-row">
+								<select name="b_div" class="custom-select mb-3 form-control">
+									<option selected>선택해주세요</option>
+									<option value="free">자유게시판</option>
+									<option value="qna">Q&A</option>
+								</select>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md-6 form-group">
+									<input type="text" name="m_name" class="form-control"
+										id="m_name" value="${member.m_name}" placeholder="이름을 입력하세요" />
+									<div class="validate"></div>
+								</div>
+								<div class="col-md-6 form-group">
+									<input type="text" class="form-control" name="m_mail"
+										id="m_mail" value="${member.m_mail}" placeholder="메일주소를 입력하세요" />
+									<div class="validate"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="b_title"
+									id="b_title" placeholder="제목을 입력하세요" data-msg="제목을 입력해주세요" />
 								<div class="validate"></div>
 							</div>
-							<div class="col-md-6 form-group">
-								<input type="email" class="form-control" name="email" id="email"
-									placeholder="Your Email" data-rule="email"
-									data-msg="Please enter a valid email" />
+							<div class="form-group">
+								<textarea class="form-control" name="b_content" rows="5"
+									data-msg="내용을 입력해주세요" placeholder="내용을 입력하세요"></textarea>
 								<div class="validate"></div>
 							</div>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" name="subject"
-								id="subject" placeholder="Subject" data-rule="minlen:4"
-								data-msg="Please enter at least 8 chars of subject" />
-							<div class="validate"></div>
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" name="message" rows="5"
-								data-rule="required" data-msg="Please write something for us"
-								placeholder="Message"></textarea>
-							<div class="validate"></div>
-						</div>
-						<div class="mb-3">
-							<div class="loading">Loading</div>
-							<div class="error-message"></div>
-							<div class="sent-message">Your message has been sent. Thank
-								you!</div>
-						</div>
-						<div class="text-center">
-							<button type="submit">Send Message</button>
-						</div>
-					</form>
+							<div class="form-row" style="display: none">
+								<div class="col-md-6 form-group">
+									<input type="text" name="m_num" class="form-control" id="m_num"
+										value="${member.m_num}" />
+									<div class="validate"></div>
+								</div>
+								<div class="col-md-6 form-group">
+									<input type="text" class="form-control" name="b_date"
+										id="b_date" value=<%=b_date%> />
+									<div class="validate"></div>
+								</div>
+							</div>
 
+							<div class="text-center">
+								<button type="submit" class="form-control">작성하기</button>
+							</div>
+						</form>
+
+					</div>
 				</div>
-				<div>
-					<h1></h1>
+
+				<div class="row" style="width: 100%">
+					<br />
 				</div>
 				<div class="col-lg-12">
 					<div class="info d-flex flex-column justify-content-center"
@@ -443,18 +529,22 @@
 
 						<ul class="nav nav-tabs nav-justified">
 							<li class="nav-item"><a class="nav-link active"
+								data-toggle="pill" href="#all">ALL</a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="pill"
 								href="#inform">공지사항</a></li>
-							<li class="nav-item"><a class="nav-link" href="#free">자유게시판</a></li>
-							<li class="nav-item"><a class="nav-link" href="#qna">Q&A</a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="pill"
+								href="#free">자유게시판</a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="pill"
+								href="#qna">Q&A</a></li>
 
 						</ul>
 
 						<div class="tab-content">
-							<div class="tab-pane container active" id="inform">
+							<div class="container tab-pane active" id="all">
 								<br>
-								<h2 style="text-align: center;">공지사항</h2>
+								<h2 style="text-align: center;">ALL</h2>
 								<br>
-							 <table class="table">
+								<table class="table">
 									<thead class="thead-light">
 										<tr>
 											<th>제목</th>
@@ -463,75 +553,89 @@
 										</tr>
 									</thead>
 									<tbody>
-										<c:forEach var="boardVO" items="${boardlist}">
+										<c:forEach var="list" items="${list}">
 											<tr>
-												<td>${boardVO.b_title}</td>
-												<td>${boardVO.m_name}</td>
-												<td>${boardVO.b_date}</td>
+												<td><a href="contentOpen()">${list.b_title}</a></td>
+												<td>${list.m_name}</td>
+												<td>${list.b_date}</td>
 											</tr>
+											<tr colspan='3' style="visibility:hidden" id="boardContent">룰루랄라</tr>
 										</c:forEach>
 									</tbody>
-								</table> 
+								</table>
 							</div>
-							<div class="tab-pane container fade" id="free">
+							<div class="container tab-pane" id="inform">
+								<br>
+								<h2 style="text-align: center;">공지사항</h2>
+								<br>
+								<table class="table">
+									<thead class="thead-light">
+										<tr>
+											<th>제목</th>
+											<th>이름</th>
+											<th>날짜</th>
+										</tr>
+									</thead>
+									<tbody>
+										<c:forEach var="list" items="${list}">
+											<c:if test="${list.b_div eq 'inform'}">
+												<tr>
+													<td><a>${list.b_title}</a></td>
+													<td>${list.m_name}</td>
+													<td>${list.b_date}</td>
+												</tr>
+											</c:if>
+										</c:forEach>
+									</tbody>
+								</table>
+							</div>
+							<div class="container tab-pane" id="free">
 								<br>
 								<h2 style="text-align: center;">자유게시판</h2>
 								<br>
 								<table class="table">
 									<thead class="thead-light">
 										<tr>
-											<th>Firstname</th>
-											<th>Lastname</th>
-											<th>Email</th>
+											<th>제목</th>
+											<th>이름</th>
+											<th>날짜</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>John</td>
-											<td>Doe</td>
-											<td>john@example.com</td>
-										</tr>
-										<tr>
-											<td>Mary</td>
-											<td>Moe</td>
-											<td>mary@example.com</td>
-										</tr>
-										<tr>
-											<td>July</td>
-											<td>Dooley</td>
-											<td>july@example.com</td>
-										</tr>
+										<c:forEach var="list" items="${list}">
+											<c:if test="${list.b_div eq 'free'}">
+												<tr>
+													<td>${list.b_title}</td>
+													<td>${list.m_name}</td>
+													<td>${list.b_date}</td>
+												</tr>
+											</c:if>
+										</c:forEach>
 									</tbody>
 								</table>
 							</div>
-							<div class="tab-pane container fade" id="qna">
+							<div class="container tab-pane" id="qna">
 								<br>
 								<h2 style="text-align: center;">Q&A</h2>
 								<br>
 								<table class="table">
 									<thead class="thead-light">
 										<tr>
-											<th>Firstname</th>
-											<th>Lastname</th>
-											<th>Email</th>
+											<th>제목</th>
+											<th>이름</th>
+											<th>날짜</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>John</td>
-											<td>Doe</td>
-											<td>john@example.com</td>
-										</tr>
-										<tr>
-											<td>Mary</td>
-											<td>Moe</td>
-											<td>mary@example.com</td>
-										</tr>
-										<tr>
-											<td>July</td>
-											<td>Dooley</td>
-											<td>july@example.com</td>
-										</tr>
+										<c:forEach var="list" items="${list}">
+											<c:if test="${list.b_div eq 'qna'}">
+												<tr>
+													<td>${list.b_title}</td>
+													<td>${list.m_name}</td>
+													<td>${list.b_date}</td>
+												</tr>
+											</c:if>
+										</c:forEach>
 									</tbody>
 								</table>
 							</div>

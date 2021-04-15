@@ -9,9 +9,9 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
- 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> 
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> 
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/> 
-		<property name="url" value="jdbc:oracle:thin:@61.80.80.163:1521:xe" /> 
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe" /> 
 		<property name="username" value="hr"/> 
 		<property name="password" value="hr"/> 
 	</bean>
@@ -40,8 +40,8 @@
 	<!-- 트랜잭션 매니저 bean 을 등록합니다. -->
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"> 
 		<property name="dataSource" ref="dataSource" /> 
-	</bean> 	
- 
+	</bean>
+	
 	<!-- 아노테이션 기반의 트랜잭션을 사용합니다. --> 
 	<tx:annotation-driven transaction-manager="transactionManager"/> 
 		

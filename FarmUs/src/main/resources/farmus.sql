@@ -210,6 +210,13 @@ insert into monseed values(monseed_seq.nextval,23,90,540,32,sysdate,
 insert into monseed values(monseed_seq.nextval,20,90,360,54,sysdate,
 '저장된 경로가 없습니다.','저장된 경로가 없습니다.', 1, 'test');
 
+insert into board values(board_seq.nextval,'inform','1번공지','잘키우세요','관리자',sysdate,
+ 0, '@admin');
+insert into board values(board_seq.nextval,'free','1번자게','상추쌈','test',sysdate,
+ 1, 'test');
+insert into board values(board_seq.nextval,'qna','1번큐앤에이','궁금해요','test',sysdate,
+ 1, 'test');
+
 insert into plant values(plant_seq.nextval, '버터헤드',300, '15', '90' , '1000', '21', 0, '@admin');
 insert into plant values(plant_seq.nextval, '곱슬겨자',300, '15', '90' , '1000', '7', 0, '@admin');
 insert into plant values(plant_seq.nextval, '엔디브',300, '20', '90' , '1000', '21',  0, '@admin');
@@ -242,4 +249,5 @@ insert into rank values('바질',0);
 insert into rank values('루꼴라',0);
 insert into rank values('적근대',0);
 
+select * from BOARD
 commit;
